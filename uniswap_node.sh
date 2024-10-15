@@ -55,7 +55,7 @@ show_menu() {
     draw_middle_border
     print_telegram_icon
     echo -e "${CYAN}║${RESET}"
-    echo -e "    ${BLUE}Subscribe to our channel: ${YELLOW}https://t.me/wingsnodeteam${RESET}"
+    echo -e "    ${BLUE}Subscribe to our channel: ${YELLOW}https://t.me/${RESET}"
     echo -e "${CYAN}║${RESET}"
     draw_middle_border
     echo -e "    ${GREEN}Hello friend, you have entered the Uniswap node${RESET}"
@@ -92,7 +92,7 @@ install_node() {
         sudo systemctl enable docker
 
 
-        sudo curl -L "https://github.com/docker/compose/releases/download/v2.20.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+        sudo curl -L "https://github.com/docker/compose/releases/download/v2.29.7/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
         sudo chmod +x /usr/local/bin/docker-compose
 
 
